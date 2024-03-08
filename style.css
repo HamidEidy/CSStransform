@@ -1,0 +1,31 @@
+body{
+    background-image: url(./images/premium_photo-1675183556353-05a6944ef506.avif);
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.image {
+    background-color: #e5e5e5;
+    transform: rotate(8deg);
+    padding: 10px;
+    box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.7);
+}
+.image img {
+    object-fit: cover;
+}
+.caption {
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.image::before {
+    content: '';
+    display: block;
+    background-color: #a3b18a;
+    width: 100px;
+    height: 25px;
+    transform: rotate(-25deg) translate(-30px, -25px);
+}
